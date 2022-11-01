@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+:root{
+   --bg-color: #ffffff;      
+   --main-color1: rgb(0, 255, 255, 100%);
+   --main-color2: rgb(0, 0, 255, 100%);
+   --text-color: #000;
+   --second-color: #a09dab;
+   --bg-font: 5rem;
+   --h2-font: 3rem;
+   --p-font: 1.1rem;
+}
+body{
+   background: var(--bg-color);
+   color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: 0.3s;
+}
+.logo{
+    max-width: 100%;
+    width: 130px;
+    height: auto;
+}
+.navlist{
+    display: flex;
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 10px 27px;
+}
+.navlist a::after{
+    content: '';
+	position: absolute; 
+	width: 0;
+	height: 2px;
+	background: var(--main-color2);
+	bottom: -3px;
+	left: 0;
+	transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+.tob-btn{
+    display: inline-block;
+    padding: 15px 20px;
+    background: transparent;
+    border: 2px solid var(--main-color2);
+    border-radius: 30px ;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: ease 0.50s;
+}
+.tob-btn:hover{
+    transform: scale(1.1);
+	background: var(--main-color1);
+	border: 1px solid var(--main-color1);
+	color: var(--bg-color);
+}
+section{
+    padding: 120px 18%;
+}
+.home{
+    min-height: 90vh;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+.home-text h3{
+   color: var(--main-color2);
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+.home-text h2{
+   font-size: var(--h2-font);
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+.home-text h5{
+   font-size: 15px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+.home-text p{
+   font-size: var(--p-font);
+   font-weight: 500;
+   color: var(--second-color);
+   line-height: 30px;
+   margin-bottom: 10px;
+}
+.span{
+    color: var(--main-color2);
+}
+.social a{
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     color: var(--bg-color);
+     background-color: var(--main-color2);
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+      margin-right: 22px;
+     margin-bottom: 30px;
+}
+.social a:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    background-color: var(--main-color1);
+    transition: ease 0.40s;
+    -webkit-transition: ease 0.40s;
+    -moz-transition: ease 0.40s;
+    -ms-transition: ease 0.40s;
+    -o-transition: ease 0.40s;
+}
+.btn{
+    padding: 9px 25px;
+    background-color: var(--main-color2);
+    color: var(--bg-color);
+    border: 2px solid var(--main-color2);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.home-img{
+   width: 100%;
+   width: 530px;
+   height: auto;
+}
+.heading{
+   text-align: center;
+}
+.heading h3{
+   font-size: 30px;
+   color: var(--main-color2);
+   margin-bottom: 20px;
+}
+.heading p{
+   font-size: var(--p-font);
+   font-weight: 500;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+}
+.hobby-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+}
+.goal-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 5rem;
+    align-items: center;
+}
+.dream-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 20px;
+}
+.end{
+    text-align: center;
+    padding: 40px;
+}
+.end p{
+    color: var(--second-color);
+    letter-spacing: 1px;
+}
